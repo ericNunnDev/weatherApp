@@ -18,6 +18,10 @@ main {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+input {
+    height: 1.25rem;
+}
+
 #search {
     font-size: 1.2rem
 }
@@ -29,12 +33,21 @@ main {
     padding: 4px;
 }
 
+button:hover {
+    border: 2px outset grey;
+}
+
+div#weather {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
+
 #weather,
 #load {
     background-color: cyan;
-    border: 2.5px solid #fff;
+    border: 5px inset #777;
     display: none;
     height: 25vh;
     margin-top: 25px;
-    padding: 0.5rem;
+    padding: 2.5rem;
 }
