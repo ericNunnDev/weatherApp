@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: cadetblue;
+    -webkit-box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 4rem;
+    padding: 2rem;
+}
+
+main {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#search {
+    font-size: 1.2rem
+}
+
+#search button {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1rem;
+    padding: 4px;
+}
+
+#weather,
+#load {
+    background-color: cyan;
+    border: 2.5px solid #fff;
+    display: none;
+    height: 25vh;
+    margin-top: 25px;
+    padding: 0.5rem;
+}
