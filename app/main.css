@@ -45,7 +45,7 @@ div#weather {
 #weather,
 #load {
     background-color: cyan;
-    background-image: url('https://ubisafe.org/images/transparent-cloud-real-1.png');
+    /*  background-image: url('https://ubisafe.org/images/transparent-cloud-real-1.png');*/
     border: 5px inset #777;
     display: none;
     height: 25vh;
@@ -55,6 +55,5 @@ div#weather {
 
 footer {
     background-color: cadetblue;
-    height: 10vh;
-    margin-top: 7.7rem;
+    /*    margin-top: 7.7rem;*/
 }

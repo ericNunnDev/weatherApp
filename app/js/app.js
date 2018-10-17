@@ -3,6 +3,8 @@
 searchButton.addEventListener('click', searchWeather);
 
 function searchWeather() {
+    loadingText.style.display = 'block';
+    weatherBox.style.display = 'none';
     var cityName = (searchCity.value);
     if (cityName.trim().length == 0) {
         return alert('Please enter the name of a city.');
@@ -34,5 +36,6 @@ function updateWeather(weatherData) {
 
     weatherTemp.textContent = weatherData.temperature;
 
+    loadingText.style.display = 'none';
     weatherBox.style.display = 'block';
 }
