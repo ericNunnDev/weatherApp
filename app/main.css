@@ -4,14 +4,18 @@
     text-align: center;
 }
 
+body {
+    background-color: #F1F1F1;
+}
+
 header {
-    background-color: cadetblue;
+    background-color: dodgerblue;
     -webkit-box-shadow: 3px 3px 3px #ccc;
     box-shadow: 3px 3px 3px #ccc;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 4rem;
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 main {
@@ -23,7 +27,8 @@ input {
 }
 
 #search {
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
 }
 
 #search button {
@@ -44,16 +49,31 @@ div#weather {
 
 #weather,
 #load {
-    background-color: cyan;
-    /*  background-image: url('https://ubisafe.org/images/transparent-cloud-real-1.png');*/
+    background-color: darkturquoise;
+    background-image: url('https://ubisafe.org/images/transparent-cloud-real-1.png');
     border: 5px inset #777;
+    color: darkslategrey;
     display: none;
     height: 25vh;
     margin-top: 25px;
     padding: 2.5rem;
 }
 
+#weatherCity {
+    font-size: 40px;
+    padding-bottom: 7.5rem
+}
+
+#weatherDescription {
+    float: left;
+    font-size: 24px;
+}
+
+#weatherTemp {
+    float: right;
+    font-size: 24px;
+}
+
 footer {
     background-color: cadetblue;
-    /*    margin-top: 7.7rem;*/
 }
