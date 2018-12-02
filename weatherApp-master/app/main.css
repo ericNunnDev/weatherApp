@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+html {
+    background: url(./img/sky.jpeg);
+}
+
+body {}
+
+header {
+    background-color: dodgerblue;
+    -webkit-box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 4rem;
+    padding: 2.5rem;
+}
+
+main {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input {
+    height: 1.25rem;
+}
+
+#search {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+#search button {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1rem;
+    padding: 4px;
+}
+
+button:hover {
+    border: 2px outset grey;
+}
+
+div#weather {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
+
+#weather,
+#load {
+    background-color: darkturquoise;
+    border: 5px inset #777;
+    color: darkslategrey;
+    display: none;
+    height: 25vh;
+    margin-top: 25px;
+    padding: 2.5rem;
+}
+
+#weatherCity {
+    font-size: 40px;
+    padding-bottom: 7.5rem
+}
+
+#weatherDescription {
+    float: left;
+    font-size: 24px;
+}
+
+#weatherTemp {
+    float: right;
+    font-size: 24px;
+}

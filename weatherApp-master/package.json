@@ -1,0 +1,25 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "See the weather by entering the name of a city",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lowlyHero/weatherApp.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Eric Nunn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lowlyHero/weatherApp/issues"
+  },
+  "homepage": "https://github.com/lowlyHero/weatherApp#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
