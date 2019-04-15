@@ -1,4 +1,4 @@
-var searchButton = document.querySelector('button'),
+const searchButton = document.querySelector('button'),
     searchCity = document.getElementById('city'),
     loadingText = document.getElementById('load'),
     weatherBox = document.getElementById('weather'),

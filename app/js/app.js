@@ -1,25 +1,25 @@
-"use strict";
+'use strict';
 
 searchButton.addEventListener('click', searchWeather);
 
 function searchWeather() {
     loadingText.style.display = 'block';
     weatherBox.style.display = 'none';
-    var cityName = (searchCity.value);
+    const cityName = (searchCity.value);
     if (cityName.trim().length == 0) {
         return alert('Please enter the name of a city.');
     }
 
-    var http = new XMLHttpRequest();
-    var apiKey = '746d39ead8a05e38fd22591b9d3ebdc7';
-    var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&units=metric&appid=' + apiKey;
-    var method = 'GET';
+    const http = new XMLHttpRequest();
+    const apiKey = '746d39ead8a05e38fd22591b9d3ebdc7';
+    const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&units=metric&appid=' + apiKey;
+    const method = 'GET';
 
     http.open(method, url);
-    http.onreadystatechange = function () {
+    http.onreadystatechange = () => {
         if (http.readyState == XMLHttpRequest.DONE && http.status === 200) {
-            var data = JSON.parse(http.responseText);
-            var weatherData = new Weather(cityName, data.weather[0].description.toUpperCase());
+            let data = JSON.parse(http.responseText);
+            let weatherData = new Weather(cityName, data.weather[0].description.toUpperCase());
             weatherData.temperature = data.main.temp;
             updateWeather(weatherData);
         } else if (http.readyState === XMLHttpRequest.DONE) {
@@ -29,7 +29,7 @@ function searchWeather() {
     http.send();
 }
 
-function updateWeather(weatherData) {
+const updateWeather = (weatherData) => {
     weatherCity.textContent = weatherData.cityName;
 
     weatherDescription.textContent = weatherData.description;
